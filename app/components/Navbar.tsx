@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Logout from './Logout'
 
 const Navbar = () => {
   return (
@@ -8,6 +9,7 @@ const Navbar = () => {
       <Link href={"/Dashboard"}>Dashboard</Link>
       <Link href={"/SignUp"}>SignUp</Link>
       <Link href={"/SignIn"}>SignIn</Link>
+      <Logout/>
     </div>
   )
 }

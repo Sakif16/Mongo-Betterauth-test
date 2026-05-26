@@ -47,7 +47,6 @@ const SignUpPage = () => {
           width: '100%',
           maxWidth: '360px',
         }}
-        method='POST'
       >
         <h1 style={{ margin: 0, fontSize: '1.5rem' }}>Create an account</h1>
 

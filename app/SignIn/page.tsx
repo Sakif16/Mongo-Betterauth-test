@@ -10,8 +10,16 @@ const SignInPage = () => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
 
-  function handleSubmit(e:any) {
-    
+  async function handleSubmit(e:any) {
+    e.preventDefault()
+    const { data, error } = await authClient.signIn.email({
+        email,
+        password,
+        callbackURL: "/Dashboard",
+        rememberMe: true
+}, {
+    //callbacks
+})
   }
 
   return (
